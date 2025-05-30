@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Local SQLite database file (even if not used, good practice)
+db.sqlite3
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# IDE files (optional, e.g., for VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Django static files (if collected locally)
+/static/
+/media/
+
+# Any logs or temporary files
+*.log
+*.tmp
