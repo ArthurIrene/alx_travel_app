@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os # <--- ADD THIS IMPORT
-import environ # <--- ADD THIS IMPORT
+import environ # type: ignore # <--- ADD THIS IMPORT
 
 # Initialize django-environ
 env = environ.Env(
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'listings',
+    'alx_travel_app.listings',
     'rest_framework',  
     'corsheaders',     
     'drf_yasg',        
@@ -69,7 +69,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'alx_travel_app.alx_travel_app.urls'
+ROOT_URLCONF = 'alx_travel_app.urls'
 
 TEMPLATES = [
     {
@@ -86,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'alx_travel_app.alx_travel_app.wsgi.application'
+WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 
 
 # Database
